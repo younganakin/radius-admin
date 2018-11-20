@@ -40,7 +40,7 @@ def radcheck_detail(request, macAddress, ssid):
         return Response(status=status.HTTP_404_NOT_FOUND)
 
     if request.method == 'GET':
-        serializer = RacheckSerializer(radcheck)
+        serializer = RadcheckSerializer(radcheck)
         return Response(serializer.data)
 
     elif request.method == 'PUT':
