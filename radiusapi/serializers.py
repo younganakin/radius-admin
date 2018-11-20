@@ -5,7 +5,7 @@ from .models import Radcheck, Nas
 class RadcheckSerializer(serializers.ModelSerializer):
     class Meta:
         model = Radcheck
-        fields = ('username', 'value')
+        fields = '__all__'
 
 
 class NasSerializer(serializers.ModelSerializer):
