@@ -30,12 +30,12 @@ def radcheck_create(request):
 
 
 @api_view(['GET', 'PUT', 'DELETE'])
-def radcheck_detail(request, username):
+def radcheck_detail(request, macAddress, ssid):
     """
     Retrieve, update or delete a radius user.
     """
     try:
-        radcheck = Radcheck.objects.get(username=username)
+        radcheck = Radcheck.objects.get(macAddress=macAddress, ssid=ssid)
     except Radcheck.DoesNotExist:
         return Response(status=status.HTTP_404_NOT_FOUND)
 
