@@ -25,7 +25,7 @@ SECRET_KEY = 'r0!g3nb#_ibpf-9ve-4i0_1$lif*$wyy+r1)$1!z3-no&s3ldk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['radiusapi.brandfi.co.ke', '188.166.157.234']
+ALLOWED_HOSTS = ['radiusapi.brandfi.co.ke', '142.93.142.132']
 
 
 # Application definition
