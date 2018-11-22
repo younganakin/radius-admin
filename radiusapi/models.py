@@ -56,6 +56,8 @@ class Radcheck(models.Model):
     username = models.CharField(max_length=64)
     macAddress = models.CharField(max_length=40)
     mobileNumber = models.CharField(max_length=40)
+    name = models.CharField(max_length=180)
+    email = models.CharField(max_length=180)
     ssid = models.CharField(max_length=40)
     attribute = models.CharField(max_length=64)
     op = models.CharField(max_length=20)
